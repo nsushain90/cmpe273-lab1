@@ -1,0 +1,7 @@
+Defer - Defer delays execution of a function and enables it to be executed later after the function it is written in completes.Basically defer is used to free up space in memory or cleanup after a copy/scan.
+
+Panic - Panic is a built in function which is caused by a programming issue like array out of bounds,undeclared maps similar to an exception.
+
+Recover - Recover is a built-in function to be used with defer.If a routine is in panic state , the recover function will capture its value and pass control to the next funnction resuming normal execution.
+
+We recover from the run time panic by pairing recover with defer function.Since panic immediately stops all operations and goes to the top of the goroutine stack causing the program to terminate.
